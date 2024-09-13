@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="z-50 border-b-2 border-b-black py-5 fixed w-full bg-white">
+      <div class="w-[80%] mx-auto">
+        <div class="flex justify-between">
+          <h1 class="text-3xl font-bold font-serif">Logo</h1>
+          <button id="controlNav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-9 stroke-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="bg-gray-500 h-20"></div>
+    <section id="sideBar"
+      class="w-[300px] bg-white border-l-2 border-l-black h-screen pt-5 px-5  fixed z-40 right-0 translate-x-full duration-200 shadow-md"
+    >
+      <nav class="flex flex-col">
+        <a class=" font-serif mb-5 text-xl hover:bg-gray-100 p-5">Home</a>
+        <a class=" font-serif mb-5 text-xl hover:bg-gray-100 p-5">About</a>
+        <a class=" font-serif mb-5 text-xl hover:bg-gray-100  p-5">Services</a>
+      </nav>
+    </section>
+    <section class="my-4 w-[80%] mx-auto">
+      <h3 class="font-serif text-xl font-bold mb-4">
+        Select Your Skills(<span id="skillCount">0</span>)
+      </h3>
+      <ul class="flex gap-3">
+        <button class="list border border-black px-4 py-1">html</button>
+        <button class="list border border-black px-4 py-1">css</button>
+        <button class="list border border-black px-4 py-1">go</button>
+        <button class="list border border-black px-4 py-1">php</button>
+        <button class="list border border-black px-4 py-1">python</button>
+      </ul>
+    </section>
+    <section class="my-4 w-[80%] mx-auto">
+      <h3 class="font-serif text-xl font-bold mb-4">
+        Your Links
+      </h3>
+      <div class="flex gap-3">
+        <a href="https://google.com" id="ggLink" target="_blank" class=" border border-black px-4 py-1">Google</a>
+        <a href="https://youtube.com" id="ytLink" target="_blank" class=" border border-black px-4 py-1">YouTube</a>
+        <a href="" id="" target="_blank" class=" border border-black px-4 py-1">Link</a>
+
+      </div>
+    </section>
     <script src="./app.js/nav.js"></script>
-</body>
+  </body>
 </html>
