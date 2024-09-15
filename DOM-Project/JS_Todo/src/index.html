@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="bg-stone-200">
+    <main class="max-w-[450px] min-h-[500px] bg-white mx-auto mt-10 p-10">
+      <header class="mb-3">
+        <h1 class="text-3xl font-serif font-bold">Task Lists</h1>
+      </header>
+      <section class="mb-3 flex justify-between">
+        <input
+          id="taskInput"
+          type="text"
+          class="flex-grow font-mono focus-visible:outline-none border border-stone-950 ps-3"
+        />
+        <button
+          id="addTaskBtn"
+          class="flex justify-center bg-stone-950 text-white size-12 items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15"
+            />
+          </svg>
+        </button>
+      </section>
+      <section>
+        <div class="mb-3 flex justify-between">
+          <h4 class="text-xl font-bold font-serif">Your List</h4>
+          <div
+            class="status text-sm flex gap-1 justify-center items-center bg-stone-950 text-white px-4 rounded-full"
+          >
+            <span id="doneTaskTotal">0</span>
+            <span>/</span>
+            <span id="taskTotal">0</span>
+          </div>
+        </div>
+        <div class="list-group" id="listGroup">
+          <div class="empty-stage last:block hidden">
+            <div class="flex justify-center flex-col items-center gap-3 mt-20">
+              <img src="../img/emptyFile.svg" class="w-32" alt="" />
+              <p class="font-mono">There is no job yet</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

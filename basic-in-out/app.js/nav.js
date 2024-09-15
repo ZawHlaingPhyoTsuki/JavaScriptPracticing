@@ -2,8 +2,8 @@ const controlNav = document.querySelector("#controlNav");
 const sideBar = document.querySelector("#sideBar");
 const skillCount = document.querySelector("#skillCount");
 const lists = document.querySelectorAll(".list");
-const ggLink = document.querySelector("ggLink");
-const ytLink = document.querySelector("ytLink");
+const ggLink = document.querySelector("#ggLink");
+const ytLink = document.querySelector("#ytLink");
 
 // get attribute
 console.log(ggLink.href);
